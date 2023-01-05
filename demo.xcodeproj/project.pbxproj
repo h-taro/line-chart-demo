@@ -13,6 +13,10 @@
 		761EF49F2965C7A600B0A243 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 761EF49D2965C7A600B0A243 /* Main.storyboard */; };
 		761EF4A12965C7A900B0A243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 761EF4A02965C7A900B0A243 /* Assets.xcassets */; };
 		761EF4A42965C7A900B0A243 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 761EF4A22965C7A900B0A243 /* LaunchScreen.storyboard */; };
+		761EF4AE2965C9C200B0A243 /* CustomLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761EF4AD2965C9C200B0A243 /* CustomLineChartView.swift */; };
+		761EF4B02965C9E300B0A243 /* CustomLineChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 761EF4AF2965C9E300B0A243 /* CustomLineChartView.xib */; };
+		761EF4B32965CA7000B0A243 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 761EF4B22965CA7000B0A243 /* Charts */; };
+		7634A96F29665A62001A499F /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7634A96E29665A62001A499F /* UIColor+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,9 @@
 		761EF4A02965C7A900B0A243 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		761EF4A32965C7A900B0A243 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		761EF4A52965C7A900B0A243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		761EF4AD2965C9C200B0A243 /* CustomLineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLineChartView.swift; sourceTree = "<group>"; };
+		761EF4AF2965C9E300B0A243 /* CustomLineChartView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomLineChartView.xib; sourceTree = "<group>"; };
+		7634A96E29665A62001A499F /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				761EF4B32965CA7000B0A243 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +64,16 @@
 		761EF4962965C7A600B0A243 /* demo */ = {
 			isa = PBXGroup;
 			children = (
+				7634A96D29665A53001A499F /* Extensions */,
+				761EF4AC2965C98B00B0A243 /* Components */,
+				761EF4AB2965C8D100B0A243 /* Resources */,
+			);
+			path = demo;
+			sourceTree = "<group>";
+		};
+		761EF4AB2965C8D100B0A243 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				761EF4972965C7A600B0A243 /* AppDelegate.swift */,
 				761EF4992965C7A600B0A243 /* SceneDelegate.swift */,
 				761EF49B2965C7A600B0A243 /* ViewController.swift */,
@@ -64,7 +82,24 @@
 				761EF4A22965C7A900B0A243 /* LaunchScreen.storyboard */,
 				761EF4A52965C7A900B0A243 /* Info.plist */,
 			);
-			path = demo;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		761EF4AC2965C98B00B0A243 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				761EF4AD2965C9C200B0A243 /* CustomLineChartView.swift */,
+				761EF4AF2965C9E300B0A243 /* CustomLineChartView.xib */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		7634A96D29665A53001A499F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7634A96E29665A62001A499F /* UIColor+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +118,9 @@
 			dependencies = (
 			);
 			name = demo;
+			packageProductDependencies = (
+				761EF4B22965CA7000B0A243 /* Charts */,
+			);
 			productName = demo;
 			productReference = 761EF4942965C7A600B0A243 /* demo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +149,9 @@
 				Base,
 			);
 			mainGroup = 761EF48B2965C7A600B0A243;
+			packageReferences = (
+				761EF4B12965CA7000B0A243 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = 761EF4952965C7A600B0A243 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				761EF4B02965C9E300B0A243 /* CustomLineChartView.xib in Resources */,
 				761EF4A42965C7A900B0A243 /* LaunchScreen.storyboard in Resources */,
 				761EF4A12965C7A900B0A243 /* Assets.xcassets in Resources */,
 				761EF49F2965C7A600B0A243 /* Main.storyboard in Resources */,
@@ -138,9 +180,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				761EF4AE2965C9C200B0A243 /* CustomLineChartView.swift in Sources */,
 				761EF49C2965C7A600B0A243 /* ViewController.swift in Sources */,
 				761EF4982965C7A600B0A243 /* AppDelegate.swift in Sources */,
 				761EF49A2965C7A600B0A243 /* SceneDelegate.swift in Sources */,
+				7634A96F29665A62001A499F /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +260,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +314,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -289,7 +333,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FP5AQZ56FT;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = demo/Info.plist;
+				INFOPLIST_FILE = demo/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -302,9 +346,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.taro.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,7 +364,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FP5AQZ56FT;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = demo/Info.plist;
+				INFOPLIST_FILE = demo/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,9 +377,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.taro.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +408,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		761EF4B12965CA7000B0A243 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		761EF4B22965CA7000B0A243 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 761EF4B12965CA7000B0A243 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 761EF48C2965C7A600B0A243 /* Project object */;
 }

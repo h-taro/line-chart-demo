@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomLineChartView" customModule="demo" customModuleProvider="target">
+            <connections>
+                <outlet property="lineChart" destination="1lB-g6-GPE" id="eQs-Mh-uVu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="485" height="436"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1lB-g6-GPE" customClass="LineChartView" customModule="Charts">
+                    <rect key="frame" x="0.0" y="59" width="485" height="343"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="1lB-g6-GPE" secondAttribute="bottom" id="Eay-By-lto"/>
+                <constraint firstItem="1lB-g6-GPE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="e9K-5D-7fM"/>
+                <constraint firstItem="1lB-g6-GPE" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="eae-LI-vsR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1lB-g6-GPE" secondAttribute="trailing" id="inL-jT-bDM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="77.099236641221367" y="-126.7605633802817"/>
+        </view>
+    </objects>
+</document>
